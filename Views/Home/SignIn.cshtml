@@ -1,9 +1,9 @@
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Sign In";
 }
 @model pandafilm.Models.SignInModel
 <div class="loginpg">
-    <form asp-action="SignIn" method="post">
+    <form action="@Url.Action("SignInDB","Home")" method="post">
     <div class="center">
         <div class="ear ear--left"></div>
         <div class="ear ear--right"></div>

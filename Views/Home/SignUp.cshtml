@@ -1,13 +1,11 @@
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Sign Up";
 }
 
 @model pandafilm.Models.SignUpModel
 
 <div class="signinpg">
-    <form asp-action="SignUp" method="post">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
+    <form action="@Url.Action("SignUpDB","Home")" method="post">
     <div class="center">
         <div class="ear ear--left"></div>
         <div class="ear ear--right"></div>
