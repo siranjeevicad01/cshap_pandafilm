@@ -15,14 +15,16 @@ public class AccountController : Controller
     {
         _context = context;
     }
-
-     public IActionResult SignUp()
+    
+    [HttpGet]
+    [Route("Account/SignUp")]
+    public IActionResult SignUp()
     {
         return View();
     }
 
     [HttpPost]
-    public async Task<IActionResult> SignUp(User user)
+    public async Task<IActionResult> SignUp(UserModel user)
     {
         if (ModelState.IsValid)
         {
@@ -32,6 +34,12 @@ public class AccountController : Controller
                 ModelState.AddModelError("Email", "Email is already registered.");
                 return View(user);
             }
+             var newUser = new UserModel{
+                UserName = user.UserName,
+                Email = user.Email,
+                Password = user.Password,
+                ConfirmPassword = user.ConfirmPassword
+            };
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
@@ -39,7 +47,9 @@ public class AccountController : Controller
         }
         return View(user);
     }
-
+    
+    [HttpGet]
+    [Route("Home/SignIn")]
     public IActionResult SignIn()
     {
         return View();
@@ -51,9 +61,29 @@ public class AccountController : Controller
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && u.Password == password);
         if (user != null)
         {
-            // Implement SignIn logic (e.g., set authentication cookie)
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.Email),
+                // Add more claims as needed
+            };
+
+            var claimsIdentity = new ClaimsIdentity(
+                claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            var authProperties = new AuthenticationProperties
+            {
+                // Customize properties if needed, such as setting IsPersistent to true for persistent cookies
+                IsPersistent = true
+            };
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+
             return RedirectToAction("Index", "Home");
         }
+
         ModelState.AddModelError("", "Invalid email or password");
         return View();
     }
