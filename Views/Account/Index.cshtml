@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/profile.css" />
+</head>
+
+<section class="profile_section">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-xl-6 col-md-6 col-sm-6">
+                <partial name="_LoginPagePartialView" />
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6">
+                <a asp-controller="Account" asp-action="Favs" class="profile_section_card fav_list_btn">
+                    <i class="bi bi-heart"></i>
+                    <h5>Favorites</h5>
+                </a>
+            </div>
+            <div class="col-xl-3">
+                <a asp-controller="Account" asp-action="WatchLater" class="profile_section_card watch_later_btn">
+                    <i class="bi bi-bookmark"></i>
+                    <h5>Watch Later</h5>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-4">
+                <a class="profile_section_card purchased_btn" href="">
+                    <i class="bi bi-wallet"></i>
+                    <h5>Purchased</h5>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-4">
+                <a class="profile_section_card history_btn" href="">
+                    <i class="bi bi-clock-history"></i>
+                    <h5>History</h5>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-4">
+                <a class="profile_section_card settings_btn" href="">
+                    <i class="bi bi-gear"></i>
+                    <h5>Settings</h5>
+                </a>
+            </div>
+            <div class="col-xl-3">
+                <a class="profile_section_card support_btn" href="">
+                    <i class="bi bi-headset"></i>
+                    <h5>Support</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

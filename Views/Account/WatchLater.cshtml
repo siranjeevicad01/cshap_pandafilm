@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WatchLaterMovieViewModel>
+
+<head>
+	<link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/table.css" />
+</head>
+
+<section class="favMovie_section">
+    <div class="container">
+        <div class="row">
+            <div class="p4">
+                <table class="table table-striped border">
+                    <tr>
+                        <th>Movie</th>
+                        <th></th>
+                    </tr>
+                    @foreach (var movie in Model)
+                    {
+                        var imagePath = "~/Posters/Movies/" + (movie.MovieId + ".jpg");
+                        <tr>
+                            <td>
+                                <a asp-controller="Content" asp-action="Movie" asp-route-id="@movie.MovieId" class="movie_card">
+                                    <img class="movie_image" src="@imagePath" asp-append-version="true">
+                                </a>
+                            </td>
+                            <td>
+                                <a asp-controller="Content" asp-action="RemoveFromWatchLater" asp-route-id="@movie.MovieId" class="removeBtn">Remove from list</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

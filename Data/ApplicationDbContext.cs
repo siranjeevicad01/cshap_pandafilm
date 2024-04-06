@@ -1,19 +1,20 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using pandafilm.Models;
+using MovixWebsiteProject.Models;
 
-namespace pandafilm.Data
+namespace identityStep.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
+            
         }
 
-        public DbSet<UserModel> Users { get; set; }
-
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        // {
-        //     optionsBuilder.UseSqlServer("ApplicationDbContext");
-        // }
+        public DbSet<ApplicationUser> applicationUsers { get; set; }
+        public DbSet<MovieModel> movieModels { get; set; }
+        public DbSet<FavMovieViewModel> favMovies { get; set; }
+        public DbSet<WatchLaterMovieViewModel> watchLaterMovies { get; set; }
+        public DbSet<MovieHistoryViewModel> userHistory { get; set; }
     }
 }
