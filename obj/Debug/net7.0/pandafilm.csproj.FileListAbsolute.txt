@@ -404,3 +404,17 @@ D:\PROJECT\ON_PROCESS\pandafilm\obj\Debug\net7.0\refint\pandafilm.dll
 D:\PROJECT\ON_PROCESS\pandafilm\obj\Debug\net7.0\pandafilm.pdb
 D:\PROJECT\ON_PROCESS\pandafilm\obj\Debug\net7.0\pandafilm.genruntimeconfig.cache
 D:\PROJECT\ON_PROCESS\pandafilm\obj\Debug\net7.0\ref\pandafilm.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Humanizer.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\PROJECT\ON_PROCESS\pandafilm\bin\Debug\net7.0\System.CodeDom.dll

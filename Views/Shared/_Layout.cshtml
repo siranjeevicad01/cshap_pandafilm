@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -253,6 +253,97 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/sign.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> *@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>@ViewData["Title"] - Movix</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a asp-controller="Home" asp-action="Index"><img src="/icons/logo.png">Movix</a></div>
+        <nav class="navbar">
+            <li class="nav_link activeBtn"><a asp-controller="Home" asp-action="Index"><i class="bi bi-house"></i>Home</a></li>
+            <li class="nav_link"><a asp-controller="Content" asp-action="MovieSearch"><i class="bi bi-film"></i>Movies</a></li>
+            <li class="nav_link"><a href=""><i class="bi bi-camera-reels"></i>Series</a></li>
+            <li class="nav_link"><a href=""><i class="bi bi-emoji-laughing"></i>Cartoons</a></li>
+            <li class="nav_link"><a href=""><i class="bi bi-tv"></i>TV-Shows</a></li>
+        </nav>
+        <div class="cta">
+            <a class="freeBtn" href="#">Watch 30 days for free</a>
+            <div class="search"><i class="bi bi-search"></i>Search</div>
+            <div class="profile"><a asp-controller="Account" asp-action="Index"><i class="bi bi-person-circle"></i></a></div>
+        </div>
+        @await Html.PartialAsync("_SearchBarPartialView", new SearchMovieViewModel())
+    </header>
+    <hr class="line">
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <hr class="line">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 footer_card">
+                    <h5>About us</h5>
+                    <a href="#">About company</a>
+                    <a href="#">Vacancies</a>
+                    <a href="#">Information for partners</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Ads</a>
+                </div>
+                <div class="col-xl-3 footer_card">
+                    <h5>Pages</h5>
+                    <a href="#">Home</a>
+                    <a href="#">Movies</a>
+                    <a href="#">Series</a>
+                    <a href="#">Cartoons</a>
+                    <a href="#">TV-Shows</a>
+                </div>
+                <div class="col-xl-3 footer_card">
+                    <h5>Support</h5>
+                    <div class="footer_support_btns">
+                        <a class="chat_btn" href="">Message in chat</a>
+                        <a class="email_btn" href=""><i class="bi bi-envelope"></i></a>
+                        <a class="phone_btn" href=""><i class="bi bi-telephone"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 footer_card">
+                    <img class="age-logo" src="/icons/age-icon.png">
+                </div>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 mb-3">
+                    <p><i class="bi bi-c-circle"></i> 2023 Movix.com</p>
+                    <p>All services are the property of Movix, Inc</p>
+                </div>
+                <div class="col-xl-6 socials">
+                    <a class="facebook" href=""><i class="bi bi-facebook"></i></a>
+                    <a class="instagram" href=""><i class="bi bi-instagram"></i></a>
+                    <a class="twitter" href=""><i class="bi bi-twitter"></i></a>
+                    <a class="telegram" href=""><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

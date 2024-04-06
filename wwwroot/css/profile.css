@@ -1,0 +1,97 @@
+/* PROFILE STYLES */
+
+.profile_section {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.profile_section_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px 80px;
+    background-color: #1f1b2e;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .profile_section_card:hover {
+        box-shadow: 1px 1px 5px rgb(255, 0, 0);
+        color: red;
+    }
+
+.profile_enter_btn {
+    background-color: rgb(150, 45, 45);
+    text-decoration: none;
+}
+
+    .profile_enter_btn:hover {
+        background-color: #1f1b2e;
+        color: red;
+    }
+
+
+/* LOGIN POP UP */
+
+#login_pop_up {
+    font-family: "Kanit", sans-serif;
+    font-size: 28px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.submit_btn {
+    padding: 5px;
+    border-radius: 15px;
+    width: 15%;
+    border: none;
+    background-color: red;
+    color: #fff;
+    transition: 0.3s;
+}
+
+    .submit_btn:hover {
+        background-color: rgb(255, 0, 0, 0.4);
+    }
+
+.login_input {
+    padding: 5px;
+    border-radius: 15px;
+    width: 60%;
+    border: none;
+}
+
+.form-group:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login_additional_btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 0 10px;
+    width: 30%;
+    transition: 0.3s;
+}
+
+    .login_additional_btn:hover {
+        background-color: red;
+        color: #fff;
+    }

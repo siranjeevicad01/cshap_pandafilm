@@ -1,0 +1,17 @@
+﻿@model SearchMovieViewModel
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<div class="pop_up" id="searching_pop_up">
+    <div class="container">
+        <div class="pop_up_body">
+            <form asp-controller="Content" asp-action="FindMovie" method="post" role="form" class="form">
+                <input asp-for="Name" class="search_bar" type="text" placeholder="Search in website...">
+                <button type="submit" class="search_button">Search</button>
+            </form>
+            <div class="search_pop_up_close pop_up_close"><i class="bi bi-x-lg"></i></div>
+        </div>
+    </div>
+</div>

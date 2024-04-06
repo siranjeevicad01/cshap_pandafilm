@@ -1,0 +1,42 @@
+﻿@model List<pandafilm.Models.MovieModel>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/movieSearch.css" />
+</head>
+
+<section class="search_section">
+    <div class="search_heading container">
+        <div class="search_title">
+            <h1>Watch Movies for free!</h1>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque libero animi rerum voluptatibus repudiandae perferendis ad dolores ipsa numquam, dignissimos, ipsum labore minima dolorum quaerat recusandae. Ut, dolorum inventore!</h5>
+        </div>
+        <div class="search_box container">
+            @await Html.PartialAsync("_SearchFormPartialView", new SearchMovieViewModel())
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row g-3">
+            @if(Model != null && Model.Count() > 0)
+            {
+                foreach (var movie in Model)
+                {
+                    var imagePath = "~/Posters/Movies/" + (movie.Id + ".jpg");
+                    <a asp-controller="Content" asp-action="Movie" asp-route-id="@movie.Id" class="movie_card">
+                        <img class="movie_image" src="@imagePath" asp-append-version="true">
+                        <div class="movie_body">
+                            <div class="movie_btns">
+                                <i class="watchLaterBtn bi bi-bookmark"></i>
+                                <a asp-controller="Content" asp-action="AddToFav" asp-route-id="@movie.Id"><i class="addFavBtn bi bi-heart"></i></a>
+                            </div>
+                            <div class="movie_info">
+                                <h2>@movie.Rating</h2>
+                                <h3>@movie.Name</h3>
+                            </div>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,75 @@
+﻿@model MovieModel
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/movie.css" />
+</head>
+
+<section class="video_player_section mb-5">
+    <div class="container">
+        <div class="row movie_row">
+            <div class="col-xl-2">
+                <img class="movie_banner" src="@Url.Content("~/Posters/Movies/" + @Model.Id + ".jpg")">
+            </div>
+            <div class="col-xl-9">
+                <div class="movie_info_block">
+                    <h1 class="movie_title">@Model.Name</h1>
+                    <h2 class="rating">@Model.Rating</h2>
+                    <h6 class="year">Year - @Model.Year</h6>
+                    <h6 class="director">Director - @Model.Director</h6>
+                    <h6 class="genre">Genre - @Model.Genre</h6>
+                    <h6 class="movie_descr">@Model.Description</h6>
+                </div>
+            </div>
+            <div class="col-xl-1">
+                <div class="savingBtns">
+                    <a asp-controller="Content" asp-action="AddToWatchLater" asp-route-id="@Model.Id"><i class="bi bi-bookmark"></i></a>
+                    <a asp-controller="Content" asp-action="AddToFav" asp-route-id="@Model.Id"><i class="bi bi-heart"></i></a>
+                </div>
+            </div>
+            <div class="video_col col-xl-12">
+                <div class="video_container">
+                    <div class="video_wrapper">
+                        <div class="video_timeline">
+                            <div class="progress_area">
+                                <span>00:00</span>
+                                <div class="progress_bar"></div>
+                            </div>
+                        </div>
+                        <ul class="video_controls">
+                            <li class="options left">
+                                <button class="volume"><i class="bi bi-volume-up"></i></button>
+                                <input type="range" min="0" max="1" step="any">
+                                <div class="video_timer">
+                                    <p class="current_time">00:00:00</p>
+                                    <p class="separator"> / </p>
+                                    <p class="video_duration">00:00:00</p>
+                                </div>
+                            </li>
+                            <li class="options center">
+                                <button class="skip_backward"><i class="bi bi-skip-start-circle"></i></button>
+                                <button class="play_pause"><i class="bi bi-play-circle"></i></button>
+                                <button class="skip_forward"><i class="bi bi-skip-end-circle"></i></button>
+                            </li>
+                            <li class="options right">
+                                <div class="playback_content">
+                                    <button class="playback_speed"><i class="bi bi-speedometer"></i></button>
+                                    <ul class="speed_options">
+                                        <li dataset-speed="2">2x</li>
+                                        <li dataset-speed="1.5">1.5x</li>
+                                        <li dataset-speed="1" class="activeSpeed">Normal</li>
+                                        <li dataset-speed="0.75">0.75x</li>
+                                        <li dataset-speed="0.5">0.5x</li>
+                                    </ul>
+                                </div>
+                                <button class="pic_in_pic"><i class="bi bi-pip"></i></button>
+                                <button class="fullscreen"><i class="bi bi-fullscreen"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <video src="@Url.Content("~/Content/" + @Model.Id + ".mp4")"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

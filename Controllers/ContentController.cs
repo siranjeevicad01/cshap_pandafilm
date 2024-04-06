@@ -7,7 +7,7 @@ using pandafilm.Models;
 
 namespace pandafilm.Controllers
 {
-    public class ContentController
+    public class ContentController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;

@@ -1,4 +1,4 @@
-namespace MovixWebsiteProject.Models
+namespace pandafilm.Models
 {
     public class ErrorViewModel
     {
