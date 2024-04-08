@@ -6,8 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using pandafilm.Interfaces;
 using pandafilm.Models;
 
-
-
 namespace pandafilm.Controllers
 {
     public class AccountController : Controller
@@ -32,7 +30,7 @@ namespace pandafilm.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Register(string? returnUrl)
+        public async Task<IActionResult> Register(string returnUrl)
         {
             var registerViewModel = new RegisterViewModel();
             return View(registerViewModel);
