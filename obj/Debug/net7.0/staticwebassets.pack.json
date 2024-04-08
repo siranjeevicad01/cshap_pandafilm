@@ -5,148 +5,68 @@
       "PackagePath": "staticwebassets\\pandafilm.bundle.scp.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Content\\1.mp4",
-      "PackagePath": "staticwebassets\\Content\\1.mp4"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\1.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\1.jpg"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\10.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\10.jpg"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\global.css",
+      "PackagePath": "staticwebassets\\css\\global.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\11.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\11.jpg"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\13.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\13.jpg"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\14.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\14.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\15.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\15.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\16.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\16.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\17.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\17.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\18.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\18.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\19.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\19.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\2.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\2.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\20.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\20.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\21.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\21.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\22.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\22.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\24.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\24.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\25.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\25.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\26.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\26.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\27.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\27.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\28.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\28.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\29.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\29.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\3.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\3.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\30.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\30.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\31.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\31.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\33.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\33.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\4.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\4.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\Posters\\Movies\\6.jpg",
-      "PackagePath": "staticwebassets\\Posters\\Movies\\6.jpg"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\home.css",
-      "PackagePath": "staticwebassets\\css\\home.css"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\movie.css",
-      "PackagePath": "staticwebassets\\css\\movie.css"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\movieSearch.css",
-      "PackagePath": "staticwebassets\\css\\movieSearch.css"
-    },
-    {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\profile.css",
-      "PackagePath": "staticwebassets\\css\\profile.css"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\services.css",
+      "PackagePath": "staticwebassets\\css\\services.css"
     },
     {
       "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\table.css",
-      "PackagePath": "staticwebassets\\css\\table.css"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\css\\templatemo-style.css",
+      "PackagePath": "staticwebassets\\css\\templatemo-style.css"
     },
     {
       "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\icons\\age-icon.png",
-      "PackagePath": "staticwebassets\\icons\\age-icon.png"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\icons\\logo.png",
-      "PackagePath": "staticwebassets\\icons\\logo.png"
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\OpenSans-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OpenSans-Regular.ttf"
+    },
+    {
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
       "Id": "D:\\PROJECT\\ON_PROCESS\\pandafilm\\wwwroot\\js\\sign.js",

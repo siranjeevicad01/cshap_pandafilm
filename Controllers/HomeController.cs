@@ -28,7 +28,35 @@ public class HomeController : Controller
             return View();
         }
 
+    public IActionResult AboutUs()
+    {
+        return View();
+    }
 
+    public IActionResult Blog()
+    {
+        return View();
+    }
+
+    public IActionResult BlogDetail()
+    {
+        return View();
+    }
+
+    public IActionResult Service()
+    {
+        return View();
+    }
+
+    public IActionResult Team()
+    {
+        return View();
+    }
+
+    public IActionResult ContactUs()
+    {
+        return View();
+    }
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
